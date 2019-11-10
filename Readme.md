@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Иван Капусткин](https://up.htmlacademy.ru/adaptive/18/user/1011917).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Солодухин](https://up.htmlacademy.ru/adaptive/18/user/138404).
 
 ---
 
