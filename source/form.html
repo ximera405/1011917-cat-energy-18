@@ -34,70 +34,102 @@
 
     </header>
 
-    <main class="page-main">
+    <main class="page-form">
 
-      <section class="functional-food">
-        <h1 class="functional-food__slogan">Функциональное питание для котов</h1>
-        <p class="functional-food__description">Занялся собой? Займись котом!</p>
-        <img class="functional-food__image" src="img/index-can-mobile.png" alt="" width="" height="">
-        <a class="functional-food__selection" href="#">подобрать программу</a>
-      </section>
+      <div class="page-form__wrapper">
+        <p class="page-form__title">Подбор программы</p>
+        <p class="page-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      </div>
 
-      <section class="fat-reduce">
-        <div class="fat-reduce__logo"></div>
-        <h2 class="fat-reduce__heading">Похудение</h2>
-        <p class="fat-reduce__content">
-          Ваш кот весит больше собаки и&nbsp;почти утратил способность лазить по&nbsp;деревьям? Пора на&nbsp;диету! Cat
-          Energy Slim поможет вашему питомцу сбросить лишний вес.
-        </p>
-        <a class="fat-reduce__catalog" href="#">Каталог Slim</a>
-      </section>
+      <section class="food-selection">
 
-      <section class="weight-increase">
-        <div class="weight-increase__logo"></div>
-        <h2 class="weight-increase__heading">Набор массы</h2>
-        <p class="weight-increase__content">
-          Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту
-          нарастить необходимые мышцы!
-        </p>
-        <a class="weight-increase__catalog" href="#">Каталог pro</a>
-      </section>
+        <form class="food-selection__form">
 
-      <section class="advantages">
-        <p>Как это работает</p>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            Функциональное питание содержит только полезные питательные вещества.
-          </li>
-          <li class="advantages__item">
-            Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-          </li>
-          <li class="advantages__item">
-            Замените один-два приема обычной еды на наше функциональное питание.
-          </li>
-          <li class="advantages__item">
-            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
-          </li>
-        </ul>
-      </section>
+          <fieldset class="cat-inform">
+            <ul class="cat-inform__list">
+              <li class="cat-inform__item">
+                <label for="cat-inform__name">Имя:*</label>
+                <input class="cat-inform__inp" type="text" id="cat-inform_name" name="cat-name" placeholder="Барсик"
+                  required>
+              </li>
+              <li class="cat-inform__item">
+                <label for="cat-inform__weight">Вес (кг):*</label>
+                <input class="cat-inform__inp" type="text" id="cat-inform_weight" name="cat-weight" placeholder="7"
+                  required>
+              </li>
+              <li class="cat-inform__item">
+                <label for="cat-inform__age">Возраст (лет):</label>
+                <input class="cat-inform__inp" type="text" id="cat-inform_age" name="cat-age" placeholder="7" required>
+              </li>
+            </ul>
+          </fieldset>
 
-      <section class="cat-transform">
-        <h2 class="cat-transform__title">Живой пример</h2>
-        <p class="cat-transform__text">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <div class="cat-transform__weight-loss">
-          <p class="cat-transform__kg-loss">5 кг</p>
-        </div>
-        <div class="cat-transform__day-amount">
-          <p class="cat-transform__days-left">60 дней</p>
-        </div>
-        <p class="cat-transform__price">Затраты на питание: 15 000 руб.</p>
-        <div class="cat-transform__animation">
-          <img class="cat-transform__before-image" src="img/before-mobile.png" alt="" width="" height="">
-          <div class="cat-transform__range"></div>
-        </div>
+          <fieldset class="cat-purpose">
+            <ul class="cat-purpose__list">
+              <li class="cat-purpose__item">
+                <input class="cat-purpose__inp" type="radio" id="cat-purpose_weight-loss" name="cat-purpose-weight-loss"
+                  checked>
+                <label for="cat-purpose__weight-loss">Похудение</label>
+              </li>
+              <li class="cat-purpose__item">
+                <input class="cat-purpose__inp" type="radio" id="cat-purpose_weight-increase"
+                  name="cat-purpose-weight-increase">
+                <label for="cat-purpose__weight-increase">Набор массы</label>
+              </li>
+              <li class="cat-purpose_item">
+                <input class="cat-purpose__inp" type="radio" id="cat-purpose_help" name="cat-purpose-unknown">
+                <label for="cat-purpose__help">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="contacts">
+            <legend class="contacts__legend">Контактные данные (владельца кота)</legend>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <label for="contacts__mail">E-mail:*</label>
+                <input class="contacts__inp" type="email id="contacts_mail" name="e-mail-adress"
+                  placeholder="kuklachev@gmail.com" required>
+              </li>
+              <li class="contacts_item">
+                <label for="contacts__phone">Телефон:*</label>
+                <input class="contacts__inp" type="tel" id="contacts_phone" name="telephone-number"
+                  placeholder="8 (960) 900-60-90" required>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="comments">
+            <legend class="comments__legend">Комментарий</legend>
+            <textarea class="comments__text" rows="" cols="" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+
+          <fieldset class="extras">
+            <legend class="extras__legend">Дополнительно</legend>
+            <ul class="extras__list">
+              <li class="extras__item">
+                <input class="extras__inp" type="checkbox" id="extras_sweetener" name="sweetener" checked>
+                <label for="extras__sweetener">Сахарозаменитель</label>
+              </li>
+              <li class="extras__item">
+                <input class="extras__inp" type="checkbox" id="extras_water" name="drinking-water">
+                <label for="extras__water">Питьевая вода</label>
+              </li>
+              <li class="extras__item">
+                <input class="extras__inp" type="checkbox" id="extras_milk" name="drinking-milk">
+                <label for="extras__milk">Молоко</label>
+              </li>
+              <li class="extras__item">
+                <input class="extras__inp" type="checkbox" id="extras_vitamins" name="vitamins">
+                <label for="extras__vitamins">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <button class="btn btn--send" type="submit">Отправить заявку</button>
+          <small class="required-fields">* — Обязательные поля</small>
+
+        </form>
       </section>
 
       <section class="invite-map">
