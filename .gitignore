@@ -1,7 +1,6 @@
 .DS_Store
 .idea
 .vscode
-.postcss-sorting.json
 *.ai
 *.log
 *.pdf
