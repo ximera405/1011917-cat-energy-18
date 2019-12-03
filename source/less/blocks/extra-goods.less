@@ -1,4 +1,62 @@
 .extra-goods__list {
   list-style: none;
-  padding: 0;
+  padding: 0 0 16px 0;
+  margin: 0 20px 0 20px;
+  border-top: @full-border;
+}
+
+.extra-goods__item {
+  border-bottom: @full-border;
+  padding-bottom: 17px;
+}
+
+.extra-goods__title {
+  font-family: @font-oswald;
+  font-size: 24px;
+  text-align: left;
+  margin: 0;
+  font-weight: normal;
+  padding-left: 20px;
+  padding-top: 28px;
+  padding-bottom: 30px;
+  border-top: @full-border;
+}
+
+.extra-goods__name {
+  font-family: @font-oswald;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.extra-goods__amount,
+.extra-goods__price {
+  .text-decrease;
+}
+
+.extra-goods__price {
+  text-align: right;
+}
+
+.extra-goods__present {
+  min-height: 290px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 35px;
+  background-image: url("../../img/gift-photo-mobile.jpg");
+  background-repeat: no-repeat;
+}
+
+.extra-goods__cat-bag {
+  display: inline-block;
+  width: 162px;
+  margin-top: 60px;
+  text-align: center;
+  color: @white-color;
+  font-family: @font-arial;
+  padding: 0 60px;
+}
+
+.extra-goods__svg {
+  margin-top: 65px;
+  margin-left: 113px;
 }
