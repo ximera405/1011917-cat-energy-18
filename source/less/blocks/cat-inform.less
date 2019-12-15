@@ -1,5 +1,9 @@
 .cat-inform {
   .fieldset-style;
+
+  @media (--desktop-width) {
+    display: inline-block;
+  }
 }
 
 .cat-inform__list {
@@ -7,30 +11,58 @@
 }
 
 .cat-inform__item {
-  .item-style;
   color: @light-black;
+  .item-style;
 }
 
-.cat-inform__inp {
-  color: @semi-black;
-  vertical-align: middle;
-  padding-left: 16px;
+.cat-inform__input {
   box-sizing: border-box;
   min-height: 45px;
+  vertical-align: middle;
+  color: @semi-black;
   border: 1px solid @semi-grey;
-  margin-left: 10px;
+  margin-left: 16px;
+  padding-left: 16px;
+
+  @media (--tablet-width) {
+    padding-left: 20px;
+  }
 }
 
 .cat-inform__size {
   &--l {
     width: 223px;
+
+    @media (--tablet-width) {
+      width: 567px;
+    }
+
+    @media (--desktop-width) {
+      width: 506px;
+    }
   }
 
   &--m {
     width: 202px;
+
+    @media (--tablet-width) {
+      width: 545px;
+    }
+
+    @media (--desktop-width) {
+      width: 484px;
+    }
   }
 
   &--s {
     width: 170px;
+
+    @media (--tablet-width) {
+      width: 510px;
+    }
+
+    @media (--desktop-width) {
+      width: 449px;
+    }
   }
 }
