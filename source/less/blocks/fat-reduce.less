@@ -1,6 +1,26 @@
 .fat-reduce {
   min-height: 266px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
   background-color: @grey-color;
+
+  @media (--tablet-width) {
+    margin-bottom: 30px;
+    padding-left: 52px;
+    min-height: 372px;
+  }
+
+  @media (--desktop-width) {
+    box-sizing: border-box;
+    min-width: 570px;
+    min-height: 372px;
+    margin-right: 0;
+    margin-bottom: 79px;
+    margin-left: 0;
+    padding-left: 52px;
+    padding-right: 52px;
+  }
 }
 
 .fat-reduce_svg {
@@ -9,13 +29,85 @@
 
 .fat-reduce__heading {
   .heading;
+
+  @media (--desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 165px;
+      width: 100px;
+      height: 100px;
+      margin-top: -25px;
+      background-color: @leaf-color;
+      border-radius: 50%;
+    }
+  }
 }
 
 .fat-reduce__content {
+  width: 225px;
   .content;
-  padding-right: 36px;
+
+  @media (--tablet-width) {
+    width: 372px;
+    min-height: 88px;
+    padding: 0;
+    font-size: 16px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      margin-top: -105px;
+      margin-left: 225px;
+      background-color: @leaf-color;
+      border-radius: 50%;
+    }
+  }
+
+  @media (--desktop-width) {
+    width: 462px;
+    min-height: 64px;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .fat-reduce__catalog {
   .catalogs;
+
+  @media (--tablet-width) {
+    margin: 61px 0 0 0;
+    padding: 0;
+    font-size: 20px;
+    border: 0;
+  }
+
+  @media (--desktop-width) {
+    margin-top: 35px;
+  }
+}
+
+.fat-reduce__svg {
+  display: none;
+
+  @media (--tablet-width) {
+    position: absolute;
+    left: 505px;
+    display: block;
+    width: 141px;
+    height: 194px;
+    margin-top: -150px;
+  }
+
+  @media (--desktop-width) {
+    right: initial;
+    left: 165px;
+    width: 71px;
+    height: 97px;
+    margin-top: -200px;
+  }
 }

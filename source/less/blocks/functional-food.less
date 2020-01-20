@@ -1,17 +1,79 @@
 .functional-food {
   min-height: 305px;
+  margin-bottom: 200px;
   background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: block;
+    width: 280px;
+    height: 270px;
+    margin-top: 30px;
+    background-image: url("../img/index-can-mobile.png");
+    background-repeat: no-repeat;
+    .center;
+  }
+
+  @media (--tablet-width) {
+    min-height: 177px;
+    margin-bottom: 629px;
+    margin-left: 118px;
+    background-image: none;
+
+    &::after {
+      .center;
+      top: 300px;
+      width: 709px;
+      height: 609px;
+      background-image: url("../../img/index-can-tablet.png");
+    }
+  }
+
+  @media (--desktop-width) {
+    margin-bottom: 373px;
+    margin-left: 190px;
+
+    &::after {
+      margin: 0;
+      left: initial;
+      width: 552px;
+      height: 499px;
+      top: 142px;
+      right: 328px;
+      background-image: url("../../img/index-can-desktop@1x.png");
+    }
+  }
 }
 
 .functional-food__slogan {
-  .text-style;
   padding-top: 29px;
   font-size: 36px;
+
+  @media (--tablet-width) {
+    width: 420px;
+    padding-top: 0;
+    font-size: 60px;
+    text-align: left;
+    color: @black-color;
+  }
+  .text-style;
 }
 
 .functional-food__description {
-  .text-style;
-  font-size: 14px;
   padding-top: 19px;
+  font-size: 14px;
   text-transform: uppercase;
+
+  @media (--tablet-width) {
+    padding-top: 30px;
+    font-size: 20px;
+    text-align: left;
+    color: @black-color;
+  }
+  .text-style;
 }

@@ -9,19 +9,62 @@
 }
 
 .invite-map__title {
-  min-height: 114px;
+  display: flex;
+  justify-content: space-between;
+  text-align: top;
+
+  @media (--tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media (--desktop-width) {
+    position: absolute;
+    box-sizing: border-box;
+    width: 570px;
+    min-height: 201px;
+    margin-top: 95px;
+    padding: 69px 0 62px 0;
+    background-color: @white-color;
+  }
 }
 
 .invite-map__text {
-  font-family: @font-oswald;
   width: 125px;
+  font-family: @font-oswald;
   .invite-map-text;
+
+  @media (--tablet-width) {
+    margin: 0 0 0 43px;
+    font-size: 20px;
+    color: @black-two;
+  }
 }
 
 .invite-map__address {
-  font-family: @font-arial;
   width: 135px;
   font-size: 14px;
+  font-family: @font-arial;
   color: @semi-black;
   .invite-map-text;
+
+  @media (--tablet-width) {
+    box-sizing: border-box;
+    min-height: 76px;
+    margin: 0 0 0 340px;
+    text-align: right;
+  }
+}
+
+.invite-map__map {
+  width: 100%;
+  height: 400px;
+}
+
+.invite-map__inline {
+  @media (--tablet-width) {
+    display: inline-block;
+    margin-top: 15px;
+    vertical-align: bottom;
+  }
 }
