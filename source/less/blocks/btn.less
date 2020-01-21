@@ -7,10 +7,26 @@
   font-family: @font-oswald;
   margin-left: 20px;
 
+  &:hover,
+  &:focus {
+    background-color: @dark-leaf-color;
+  }
+
+  &:active {
+    color: @white-two;
+  }
+
   &--order {
-    background-color: @leaf-color;
-    color: @white-color;
+    width: 100%;
+    display: block;
     margin-bottom: 25px;
+    color: @white-color;
+    background-color: @leaf-color;
+    .center;
+
+    @media (--tablet-width) {
+      width: 80%;
+    }
   }
 
   &--show {

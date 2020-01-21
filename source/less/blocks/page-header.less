@@ -8,6 +8,26 @@
   padding-top: 11px;
   margin-bottom: 11px;
 
-  display: block;
-  width: 256px;
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (--tablet-width) {
+    min-width: 174px;
+    height: 59px;
+    margin-top: 24px;
+    background: url("../../img/logo-tablet.png") no-repeat;
+  }
+
+  @media (--desktop-width) {
+    box-sizing: border-box;
+    min-width: 610px;
+    margin-top: 53px;
+    background: url("../../img/logo-desktop.png") no-repeat;
+  }
 }

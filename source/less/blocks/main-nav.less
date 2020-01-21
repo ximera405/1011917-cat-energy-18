@@ -16,6 +16,61 @@
   position: absolute;
   background-color: inherit;
   border: 0;
-  top: 23px;
-  left: 276px;
+
+  @media (--tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__svg {
+  &:hover,
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__link {
+  cursor: pointer;
+  color: @black-two;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--active-white {
+    border-bottom: 2px solid white;
+  }
+
+  &--active-green {
+    border-bottom: 2px solid @leaf-color;
+  }
+
+  &--white {
+    @media (--desktop-width) {
+      color: @white-color;
+    }
+  }
+
+  @media (--desktop-width) {
+    font-size: 20px;
+  }
+}
+
+.main-nav__background {
+  @media (--desktop-width) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    width: 50%;
+    height: 696px;
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+  }
 }

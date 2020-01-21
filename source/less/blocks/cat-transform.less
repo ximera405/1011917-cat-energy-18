@@ -1,5 +1,5 @@
 .cat-transform {
-  background-color: @grey-color;
+  position: relative;
   min-height: 705px;
   margin-top: 47px;
 }
@@ -64,6 +64,153 @@
   font-family: @font-oswald;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 24px;
-  margin-bottom: 44px;
+
+  @media (--tablet-width) {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 175px;
+    margin-left: 135px;
+    font-size: 20px;
+    vertical-align: bottom;
+    text-align: right;
+  }
+
+  @media (--desktop-width) {
+    width: 336px;
+    margin: 0 0 70px 0;
+    text-align: left;
+  }
+}
+
+.cat-transform__rubles {
+  @media (--desktop-width) {
+    margin-left: 60px;
+  }
+}
+
+.cat-transform__animation {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 35px;
+  background-image: url("../../img/before-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 232px;
+
+  @media (--tablet-width) {
+    min-width: 636px;
+    height: 500px;
+    margin-top: 90px;
+    margin-bottom: 21px;
+    margin-left: 46px;
+    margin-right: 86px;
+    vertical-align: middle;
+    background-image: url("../../img/before-tablet@1x.png");
+    background-repeat: no-repeat;
+  }
+
+  @media (--desktop-width) {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 124px;
+    width: 636px;
+    background-image: url("../../img/before-desktop@1x.png");
+  }
+}
+
+.cat-transform__text-wrapper {
+  @media (--desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 430px;
+    min-height: 462px;
+  }
+}
+
+.cat-transform__range {
+  padding-bottom: 38px;
+  padding-left: 64px;
+  box-sizing: border-box;
+
+  @media (--tablet-width) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  @media (--desktop-width) {
+    position: absolute;
+    padding: 0;
+    bottom: 81px;
+    right: 182px;
+  }
+}
+
+.cat-transform__before-text,
+.cat-transform__after-text {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  font-family: @font-oswald;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.cat-transform__after-text {
+  text-align: right;
+}
+
+.cat-transform__white-slide {
+  display: inline-block;
+  vertical-align: middle;
+  width: 33%;
+  height: 14px;
+  border-radius: 6px;
+  background-color: @white-color;
+  box-sizing: border-box;
+  padding: 4px 0 4px 6px;
+  margin: 0 18px;
+
+  @media (--tablet-width) {
+    position: absolute;
+    margin: 0;
+    top: -14px;
+    left: 50%;
+    right: 50%;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    padding: 13px;
+  }
+}
+
+.cat-transform__green-slide {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  height: 6px;
+  border-radius: 3px;
+  background-color: @leaf-color;
+
+  @media (--tablet-width) {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+}
+
+.cat-transform__grey-line {
+  position: relative;
+  border-radius: 2.5px;
+
+  @media (--tablet-width) {
+    width: 428px;
+    height: 6px;
+    margin-left: 24px;
+    margin-right: 21px;
+    background-color: @light-pink;
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
