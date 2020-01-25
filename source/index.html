@@ -24,13 +24,13 @@
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--home main-nav__link--white" href="#">Главная</a>
+            <a class="main-nav__link main-nav__link--white main-nav__link--active-white" href="#">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--catalog main-nav__link--white" href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link main-nav__link--white" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--program main-nav__link--white" href="form.html">Подбор программы</a>
+            <a class="main-nav__link main-nav__link--white" href="form.html">Подбор программы</a>
           </li>
         </ul>
         <div class="main-nav__background"></div>
@@ -57,7 +57,7 @@
             Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
           <div class="weight-change__svg-wrapper weight-change__svg-wrapper--cat">
-            <svg class="weight-change__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 70 97"
               style="enable-background:new 0 0 70 97;" xml:space="preserve">
               <g>
@@ -79,10 +79,9 @@
           <a class="weight-change__catalog" href="#">
             Каталог Slim
             <?xml version="1.0" encoding="utf-8"?>
-            <svg class="weight-change_svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24.2 11" width="23" height="12"
-              xml:space="preserve">
-              <polygon class="st0" points="17.6,0 24.2,5.5 17.6,11 17.6,6.6 0,6.6 0,4.4 17.6,4.4 " />
+            <svg class="weight-change__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24.2 11" xml:space="preserve">
+              <polygon points="17.6,0 24.2,5.5 17.6,11 17.6,6.6 0,6.6 0,4.4 17.6,4.4 " />
             </svg>
           </a>
         </div>
@@ -124,10 +123,9 @@
           <a class="weight-change__catalog" href="#">
             Каталог pro
             <?xml version="1.0" encoding="utf-8"?>
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24.2 11" width="23" height="12"
-              xml:space="preserve">
-              <polygon class="st0" points="17.6,0 24.2,5.5 17.6,11 17.6,6.6 0,6.6 0,4.4 17.6,4.4 " />
+            <svg class="weight-change__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24.2 11" xml:space="preserve">
+              <polygon points="17.6,0 24.2,5.5 17.6,11 17.6,6.6 0,6.6 0,4.4 17.6,4.4 " />
             </svg></a>
         </div>
       </section>
@@ -182,11 +180,18 @@
           <div class="cat-transform__after cat-transform__after--days">
             <p class="cat-transform__changes">затрачено времени</p>
           </div>
-          <p class="cat-transform__price">Затраты на питание: 15 000 руб.</p>
+          <p class="cat-transform__price">Затраты на питание: <span class="cat-transform__rubles">15 000 руб.</span></p>
         </div>
-        <div class="cat-transform__animation">
-        </div>
-        <div class="cat-transform__range"></div>
+      </div>
+      <div class="cat-transform__animation"></div>
+      <div class="cat-transform__range">
+        <p class="cat-transform__before-text">было</p>
+        <span class="cat-transform__grey-line">
+          <span class="cat-transform__white-slide">
+            <span class="cat-transform__green-slide"></span>
+          </span>
+        </span>
+        <p class="cat-transform__after-text">стало</p>
       </div>
     </section>
 
@@ -195,12 +200,13 @@
   <footer class="main-footer">
 
     <div class="invite-map invite-map--white">
+    <div class="container">
       <div class="invite-map__title">
-        <div class="container">
           <p class="invite-map__text">приглашаем к сотрудничеству дилеров!</p>
           <p class="invite-map__address">ул. Большая Конюшенная, д. 19/8<br><br>Санкт-Петербург</p>
         </div>
       </div>
+    </div>
       <iframe class="invite-map__map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1576247899200!5m2!1sen!2sru"
         frameborder="0" style="border:0;" allowfullscreen="true"></iframe>
@@ -259,7 +265,7 @@
       </div>
     </div>
   </footer>
-  <script src='./js/index.js'></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>

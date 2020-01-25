@@ -15,11 +15,18 @@
 }
 
 .page-header__logo {
-  display: block;
-  width: 191px;
-  height: 39px;
-  margin-top: 11px;
-  background: url("../../img/logo-mobile-header.png") no-repeat;
+  margin-left: 20px;
+  padding-top: 11px;
+  margin-bottom: 11px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (--tablet-width) {
     min-width: 174px;

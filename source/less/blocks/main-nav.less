@@ -86,13 +86,15 @@
   }
 
   &:active {
-    border-bottom: 2px solid @leaf-color;
+    opacity: 0.3;
   }
 
-  &--black {
-    @media (--desktop-width) {
-      color: @black-color;
-    }
+  &--active-white {
+    border-bottom: 2px solid white;
+  }
+
+  &--active-green {
+    border-bottom: 2px solid @leaf-color;
   }
 
   &--white {

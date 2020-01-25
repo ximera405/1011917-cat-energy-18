@@ -75,6 +75,21 @@
 .weight-change__catalog {
   .catalogs;
 
+  &:hover,
+  &:active {
+    .weight-change__svg {
+      width: 34px;
+    }
+  }
+
+  &:active {
+    color: @grey-two;
+
+    .weight-change__svg {
+      fill: @grey-two;
+    }
+  }
+
   @media (--tablet-width) {
     margin: 61px 0 0 0;
     padding: 0;
@@ -85,6 +100,11 @@
   @media (--desktop-width) {
     margin-top: 35px;
   }
+}
+
+.weight-change__svg {
+  width: 25px;
+  height: 12px;
 }
 
 .weight-change__heading {
