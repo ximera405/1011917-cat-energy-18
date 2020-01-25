@@ -2,33 +2,72 @@
   position: relative;
   min-height: 705px;
   margin-top: 47px;
+  background-color: @grey-color;
+
+  @media (--tablet-width) {
+    margin: 0;
+  }
+
+  @media (--desktop-width) {
+    min-height: 462px;
+  }
 }
 
 .cat-transform__title {
-  font-family: @font-oswald;
-  text-align: left;
-  font-size: 36px;
+  margin-top: 0;
   padding-top: 33px;
   padding-left: 20px;
+  font-size: 36px;
+  font-family: @font-oswald;
+  text-align: left;
+  background-color: @grey-color;
+
+  @media (--tablet-width) {
+    font-size: 60px;
+    padding-left: 30px;
+    margin: 0;
+  }
+
+  @media (--desktop-width) {
+    padding-left: 110px;
+    padding-bottom: 66px;
+    font-size: 60px;
+    background-color: @white-color;
+  }
 }
 
 .cat-transform__text {
-  color: @semi-black;
+  padding-right: 14px;
+  font-size: 14px;
   font-family: @font-arial;
   text-align: left;
-  font-size: 14px;
-  padding-left: 20px;
-  padding-right: 24px;
+  color: @semi-black;
+
+  @media (--tablet-width) {
+    padding-right: 33px;
+    margin-top: 60px;
+    margin-bottom: 56px;
+    font-size: 16px;
+  }
+
+  @media (--desktop-width) {
+    display: inline-block;
+    vertical-align: middle;
+    width: 430px;
+  }
 }
 
 .cat-transform__kg-loss {
   .cat-transform__boxes;
-  margin-left: 20px;
 }
 
 .cat-transform__days-left {
-  .cat-transform__boxes;
   margin-left: 24px;
+
+  @media (--tablet-width) {
+    margin-left: 42px;
+  }
+  .cat-transform__boxes;
 }
 
 .cat-transform__after {
@@ -36,31 +75,49 @@
   z-index: 50;
   width: 87px;
   height: 19px;
-  color: @semi-black;
-  font-size: 12px;
-  background-color: @grey-color;
   margin-top: -40px;
   padding-top: 0;
+  font-size: 12px;
+  color: @semi-black;
+  background-color: @grey-color;
 
   &--weight {
     left: 40px;
+
+    @media (--tablet-width) {
+      left: 70px;
+    }
+
+    @media (--desktop-width) {
+      display: none;
+    }
   }
 
   &--days {
     left: 194px;
+
+    @media (--tablet-width) {
+      left: 280px;
+    }
+
+    @media (--desktop-width) {
+      display: none;
+    }
   }
 }
 
 .cat-transform__changes {
   position: absolute;
-  text-align: center;
   width: 54px;
-  padding-left: 16px;
-  padding-top: 8px;
   margin-top: 0;
+  padding-top: 8px;
+  padding-left: 16px;
+  text-align: center;
 }
 
 .cat-transform__price {
+  margin-top: 24px;
+  margin-bottom: 44px;
   font-family: @font-oswald;
   text-align: center;
   text-transform: uppercase;

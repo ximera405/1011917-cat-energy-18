@@ -1,9 +1,22 @@
 .food-selection__required {
   display: inline-block;
+  width: 100%;
+  margin-top: 22px;
+  margin-bottom: 34px;
   vertical-align: middle;
   text-align: center;
   color: @semi-black;
-  margin-top: 22px;
-  margin-bottom: 34px;
-  width: 100%;
+
+  @media (--tablet-width) {
+    width: 180px;
+    font-size: 16px;
+    margin: 0 0 72px 60px;
+    vertical-align: baseline;
+  }
+}
+
+.food-selection__wrapper {
+  @media (--desktop-width) {
+    display: flex;
+  }
 }
