@@ -15,9 +15,9 @@
 }
 
 .page-header__logo {
-  margin-left: 20px;
-  padding-top: 11px;
-  margin-bottom: 11px;
+  margin-top: 11px;
+  min-height: 65px;
+  box-sizing: border-box;
 
   &:hover,
   &:focus {
@@ -32,13 +32,25 @@
     min-width: 174px;
     height: 59px;
     margin-top: 24px;
-    background: url("../../img/logo-tablet.png") no-repeat;
   }
 
   @media (--desktop-width) {
     box-sizing: border-box;
     min-width: 610px;
     margin-top: 53px;
-    background: url("../../img/logo-desktop.png") no-repeat;
+  }
+}
+
+
+.page-header__logo img {
+  @media (--tablet-width) {
+    width: 174px;
+    height: 59px;
+  }
+
+  @media (--desktop-width) {
+    box-sizing: border-box;
+    width: 203px;
+    height: 60px;
   }
 }
